@@ -39,7 +39,9 @@ public class IPValidationRegex {
      */
     public void validateIpAddress(String ipAddress) {
         
+    	//Creates matcher object
         matcher = pattern.matcher(ipAddress);
+        
         //Checks if text matches the pattern
         if (matcher.find()) {
         	System.out.println(ipAddress);
